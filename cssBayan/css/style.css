@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.block {
+    border-top: 1px solid grey;
+    padding: 10px 0;
+    max-width: 700px;
+    color: grey;
+}
+.block:active {
+    color: darkcyan;
+}
+
+.accordion {
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+    cursor: pointer;
+}
+.titleMemo {
+
+}
+
+.blockMemo {
+    max-width: 700px;
+    display: none;
+}
+
+.imgMemo {
+    max-width: 100%;
+    transition: 1s;
+    padding: 50px;
+}
+
+.blockMemo:hover {
+    /*display: block;*/
+}
+.btn {
+   display: none;
+}
+
+.titleMemo:hover~.btn {
+    display: block;
+    /*transition-duration: .2s;*/
+}
+.imgMemo:hover  {
+    transform: scale(1.1);
+    /*transition-duration: .2s;*/
+}
+.accordion:hover~.blockMemo {
+    display: block;
+    /*transition-duration: .2s;*/
+}
+
+
+@media (max-width: 1024px) {
+
+}
