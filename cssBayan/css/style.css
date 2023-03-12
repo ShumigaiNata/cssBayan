@@ -55,7 +55,7 @@ input {
     opacity: 1;
 }
 .section:hover .accordion {
-    color: black;
+    color: darkslategrey;
 }
 
 .section .accordion {
